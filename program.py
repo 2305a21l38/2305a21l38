@@ -6,7 +6,7 @@ def Gen_Eff(V,CL,IL,K,Rsh,Ra):
     Ish = V/Rsh
     Ia = K*IL-Ish
     CU_L = Ish**2*Rsh+Ia**2*Ra
-    Eff = (K*V*IL)/(K*V*IL+CL+CU_L)*100
+    Eff = (K*V*IL)/(K*V*IL+CL+CU_L)*1000
     
     return Eff,CU_L
 st.sidebar.header("Input Parameters")
